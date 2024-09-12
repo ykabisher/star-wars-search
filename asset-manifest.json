@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/star-wars-search/static/css/main.40efec6d.css",
+    "main.js": "/star-wars-search/static/js/main.0bc28edd.js",
+    "index.html": "/star-wars-search/index.html",
+    "main.40efec6d.css.map": "/star-wars-search/static/css/main.40efec6d.css.map",
+    "main.0bc28edd.js.map": "/star-wars-search/static/js/main.0bc28edd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40efec6d.css",
+    "static/js/main.0bc28edd.js"
+  ]
+}
