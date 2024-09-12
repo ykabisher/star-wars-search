@@ -31,4 +31,7 @@ Folder structure is self explanatory, and supports small app scalability.
 ## Running
 You can use the app in github pages, to run locally:
 1. npm install
+* If there is an error during install - it may be a conflict between react-scripts and the latest version of typescript, to avid that use "npm install --force"
+https://github.com/facebook/create-react-app/issues/13080
+
 2. npm run start
