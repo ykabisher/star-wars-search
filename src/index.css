@@ -1,13 +1,46 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #eef9ff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Color Palette */
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-background-light: #f9f9f9;
+  --color-background-dark: #fff;
+  --color-text-primary: #333;
+  --color-text-secondary: #555;
+  --color-border: #ddd;
+  --color-highlight: #f2f2f2;
+  --color-error: #d9534f;
+  
+  /* Spacing */
+  --gap-small: 4px;
+  --spacing: 4px;
+  --spacing-small: 8px;
+  --spacing-medium: 12px;
+  --spacing-large: 20px;
+  --small-padding: var(--spacing);
+  
+  /* Typography */
+  --font-size-small: 12px;
+  --font-size-medium: 14px;
+  --font-size-large: 18px;
+  
+  /* Shadows */
+  --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 10%);
+  --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 10%);
+  --box-shadow-focus: 0 0 5px rgba(0, 123, 255, 50%);
+  
+  /* Border Radius */
+  --border-radius-small: 5px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 10px;
+  
 }

@@ -1,0 +1,68 @@
+/* Reset styles */
+
+
+  body, html {
+    cursor: none;
+  }
+
+  body {
+    overflow: hidden;
+  }
+  
+  /* Lightsaber cursor */
+  .lightsaber {
+    position: fixed;
+    width: 30px;  /* Make the lightsaber image smaller */
+    height: 30px; /* Make the lightsaber image smaller */
+    background-image: url('http://localhost:3000/lightsaber.png');
+    background-size: contain;
+    pointer-events: none; /* Make sure the pointer works below the lightsaber */
+    z-index: 1000;
+  }
+  
+  /* Sparks */
+  .spark {
+    position: absolute;
+    border-radius: 100%;
+    z-index: 999;
+    pointer-events: none;
+    animation: flickerAnimation 1.5s linear infinite;
+  }
+  
+  .spark .sparkGlow {
+    width: 200%;
+    height: 200%;
+    transform: translate(-25%, -25%);
+    background-color: inherit;
+    border-radius: 100%;
+    filter: blur(8px) brightness(1.5);
+    z-index: 99;
+  }
+  
+  /* Flickering animation for sparks */
+  @keyframes flicker-animation {
+    0%,
+    100% {
+      opacity: 0.9;
+      transform: scale(0.98);
+    }
+
+    15%,
+    80% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    30%,
+    60% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+
+    45%,
+    75% {
+      opacity: 0.95;
+      transform: scale(0.97);
+    }
+  }
+  
