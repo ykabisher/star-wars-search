@@ -67,3 +67,26 @@ export type APISearchResults = {
 } | null;
 
 export type CategorySearchResult = Person | any;
+
+export const ENTITY_PROPS = {
+  people: {
+    icon: "fa-solid fa-user-large",
+    title: "People",
+  },
+  planets: {
+    icon: "fa-solid fa-earth-europe",
+    title: "Planets",
+  },
+  vehicles: {
+    icon: "fa-solid fa-motorcycle",
+    title: "Vehicles",
+  },
+  starships: {
+    icon: "fa-solid fa-shuttle-space",
+    title: "Starships",
+  },
+  species: {
+    icon: "fa-brands fa-reddit-alien",
+    title: "Species",
+  },
+};

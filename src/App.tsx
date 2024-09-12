@@ -11,11 +11,10 @@ function App() {
   };
 
   return (
-      <div>
-        {!categoryData && <SearchPage setCategoryData={setCategoryData} />}
-        {categoryData && <CategoryPage goBack={goBack} categoryData={categoryData} />}
-      </div>
-    
+    <div>
+      {!categoryData && <SearchPage setCategoryData={setCategoryData} />}
+      {categoryData && <CategoryPage goBack={goBack} categoryData={categoryData} />}
+    </div>
   );
 }
 

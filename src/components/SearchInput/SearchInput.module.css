@@ -1,0 +1,33 @@
+.inputField {
+    width: 100%;
+    padding: var(--spacing-medium);
+    font-size: 1.2rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .inputField:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: var(--box-shadow-focus);
+  }
+  
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .inputField {
+      font-size: 1rem;
+    }
+  }
+  

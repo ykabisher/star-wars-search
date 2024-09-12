@@ -33,8 +33,7 @@
 }
 
 /* Loading and error messages */
-.loading,
-.error {
+.loading {
   text-align: center;
   font-size: 1.2rem;
   color: #888;
@@ -51,10 +50,6 @@
   border: 0;
 }
 
-.error {
-  color: var(--color-error);
-}
-
 .resultContainer {
   background-color: var(--color-background-dark);
   padding: var(--spacing-medium);
@@ -68,22 +63,6 @@
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.resultList {
-  margin-bottom: 0;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.resultList li {
-  display: flex;
-  align-items: baseline;
-  gap: var(--spacing-small);
-  font-size: 1.1rem;
-  color: var(--color-text-primary);
-  margin-bottom: var(--spacing-small);
-  transition: background-color 0.3s ease;
 }
 
 /* Media queries for responsiveness */

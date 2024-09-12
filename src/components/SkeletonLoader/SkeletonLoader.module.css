@@ -1,0 +1,47 @@
+@keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  .skeletonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+  }
+  
+  .skeletonSection {
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .skeletonHeader {
+    width: 150px;
+    height: 20px;
+    border-radius: 4px;
+    margin-bottom: var(--spacing-small);
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(90deg, var(--color-skeleton-light) 25%, var(--color-skeleton) 50%, var(--color-skeleton-light) 75%);
+    background-size: 400px 100%;
+  }
+  
+  .skeletonList {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .skeletonItem {
+    height: 18px;
+    border-radius: 4px;
+    margin-bottom: var(--spacing-small);
+    width: 100%;
+    max-width: 300px;
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(90deg, var(--color-skeleton-light) 25%, var(--color-skeleton) 50%, var(--color-skeleton-light) 75%);
+    background-size: 400px 100%;
+  }
+  

@@ -42,5 +42,9 @@ body {
   --border-radius-small: 5px;
   --border-radius-medium: 8px;
   --border-radius-large: 10px;
+
+  /* Skeleton Loader */
+  --color-skeleton: #e0e0e0;
+  --color-skeleton-light: #f5f5f5;
   
 }

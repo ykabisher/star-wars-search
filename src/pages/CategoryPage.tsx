@@ -161,7 +161,7 @@ const CategoryPage: React.FC<CategoryPageInterface> = ({ goBack, categoryData })
               Showing {people.length} out of {Math.max(categoryData?.totalItems as number, people.length)} entities
             </span>
             {isShowLoadMoreButtonVisible && (
-              <Button onClick={loadMoreEntities} variant="secondary">
+              <Button onClick={loadMoreEntities} loading={loading} variant="secondary">
                 Load More
               </Button>
             )}
